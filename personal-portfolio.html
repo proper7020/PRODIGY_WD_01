@@ -1,0 +1,114 @@
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Philip - Front-End Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="personal-portfolio.css">
+</head>
+<body class="bg-gray-800 text-white font-sans">
+    <!-- Navbar -->
+    <header class="fixed w-full bg-red-900 bg-opacity-90 py-6 text-3xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-yellow-400 font-bold">Ibrahim Philip</div>
+            <div class="block md:hidden">
+                <!-- Hamburger Button -->
+                <button id="menu-btn" class="text-yellow-400 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-yellow-400 hover:text-red-400">Home</a></li>
+                <li><a href="#about" class="text-yellow-400 hover:text-red-400">About</a></li>
+                <li><a href="#projects" class="text-yellow-400 hover:text-red-400">Projects</a></li>
+                <li><a href="#contact" class="text-yellow-400 hover:text-red-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center bg-gradient-to-r from-green-300 to-blue-400">
+        <div>
+              <!-- <span class="proper">
+                    <div class="ball1">ball1</div>
+                    <div class="ball2">ball2</div>
+              </span>     -->
+
+            <h1 class="text-5xl font-bold mb-4">Hello, I'm Ibrahim Philip</h1>
+            <p class="text-2xl mb-6">Front-End Developer Intern at Prodigy InfoTech</p>
+            <a href="#contact" class="bg-cyan-400 text-gray-700 px-6 py-3 rounded-full hover:bg-yellow-400">Get in Touch</a>
+            <div class="absolute top-0 right-0 mt-6 mr-6 h-40 w-40 bg-gradient-to-br from-white to-transparent opacity-20 rounded-full"></div>
+        </div>
+        <span class="proper">
+                    <div class="ball1"></div>
+                    <div class="ball2"></div>
+              </span>   
+
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mx-auto py-20">
+        <h2 class="text-4xl font-bold text-yellow-400 mb-8">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+            <img src="https://media.licdn.com/dms/image/v2/C4D03AQGa3A0eHkf1rg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1592214023312?e=1729123200&v=beta&t=vl_5VlBlcjFkXP05z-Khq-NeJYO9DE6c1AOyf3EqwkI" alt="Ibrahim Philip" class="rounded-full w-48 h-48">
+            <p class="text-lg max-w-2xl leading-relaxed">
+                I hold a degree in Insurance and Risk Management from the University of Lagos, Akoka, Yaba, Lagos, Nigeria. My passion for technology led me to train at Zulfah Academy in Maryland, Lagos, where I honed my skills in front-end web development. I'm currently interning at Prodigy InfoTech, focusing on creating dynamic and responsive web applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-yellow-400 mb-8">Projects</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Responsive Landing Page</h3>
+                    <p class="text-lg">
+                        <!-- Project description here -->
+                    </p>
+                </div>
+                <!-- Additional projects can be added here -->
+              <p class="text-lg"> <a href="" class="text-red-400 hover:text-purpple-500">Persona-website</a></p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-yellow-400 mb-8">Contact Me</h2>
+            <p class="text-lg">You can reach me via email at <a href="mailto:ibrahimphilip64@gmail.com" class="text-red-400 hover:text-orange-400">ibrahimphilip64@gmail.com</a>.</p>
+            <p class="text-lg">You can reach me via phone at <a href="" class="text-red-400 hover:text-red-500">+2348112731575</a></p>
+            <!-- <span class="proper">
+                    <div class="ball1">ball1</div>
+                    <div class="ball2">ball2</div>
+              </span>    -->
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center text-sm">
+        <p>&copy; 2024 Ibrahim Philip. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Toggle Hamburger Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
