@@ -44,7 +44,7 @@
                 transform: translateX(0) rotate(0deg);
             }
             50% {
-                transform: translateX(30vw) rotate(360deg); /* Moves to the center */
+                transform: translateX(30vw) rotate(360deg); 
             }
             100% {
                 transform: translateX(70vw) rotate(720deg);
