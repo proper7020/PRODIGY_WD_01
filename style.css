@@ -18,21 +18,25 @@
         .ball1 {
             background-color: rgb(233, 30, 30);
             border-top: 0.34vw solid rgb(18, 160, 160);
-            border-bottom: 0.34vw solid rgb(11, 17, 23);
+            border-bottom: 0.34vw solid rgb(25, 223, 38);
             border-right: 0.34vw solid rgb(242, 162, 12);
-            border-left: 0.34vw solid rgb(152, 6, 6);
+            border-left: 0.34vw solid rgb(219, 170, 170);
             animation: ball1 3s infinite alternate ease-in-out;
             left: calc(50% - 30vw); /* Start 30% left of center */
         }
 
         .ball2 {
-            background-color: rgb(154, 102, 102);
+            background-color: rgb(226, 22, 117);
             border-top: 0.34vw solid rgb(235, 148, 17);
             border-bottom: 0.34vw solid paleturquoise;
             border-right: 0.34vw solid rgb(237, 11, 11);
             border-left: 0.34vw solid rgb(0, 162, 15);
             animation: ball2 3s infinite alternate ease-in-out;
             left: calc(50% + 30vw); /* Start 30% right of center */
+        }
+
+        .frontend {
+          border-color  : rgb(46, 46, 48);
         }
 
         @keyframes ball1 {
@@ -43,7 +47,7 @@
                 transform: translateX(30vw) rotate(360deg); /* Moves to the center */
             }
             100% {
-                transform: translateX(60vw) rotate(720deg);
+                transform: translateX(70vw) rotate(720deg);
             }
         }
 
@@ -55,6 +59,6 @@
                 transform: translateX(-30vw) rotate(-360deg); /* Moves to the center */
             }
             100% {
-                transform: translateX(-60vw) rotate(-720deg);
+                transform: translateX(-80vw) rotate(-720deg);
             }
         }

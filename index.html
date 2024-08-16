@@ -1,23 +1,19 @@
-
-
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahim Philip - Front-End Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="personal-portfolio.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-800 text-white font-sans">
-    <!-- Navbar -->
+
     <header class="fixed w-full bg-red-900 bg-opacity-90 py-6 text-3xl">
         <nav class="container mx-auto flex justify-between items-center">
             <div class="text-yellow-400 font-bold">Ibrahim Philip</div>
             <div class="block md:hidden">
-                <!-- Hamburger Button -->
+            
                 <button id="menu-btn" class="text-yellow-400 focus:outline-none">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -33,27 +29,21 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center text-center bg-gradient-to-r from-green-300 to-blue-400">
-        <div>
-              <!-- <span class="proper">
-                    <div class="ball1">ball1</div>
-                    <div class="ball2">ball2</div>
-              </span>     -->
 
-            <h1 class="text-5xl font-bold mb-4">Hello, I'm Ibrahim Philip</h1>
-            <p class="text-2xl mb-6">Front-End Developer Intern at Prodigy InfoTech</p>
+    <section id="home" class="min-h-screen flex items-center justify-center text-center bg-gradient-to-r from-green-300 to-blue-400">
+        <div class="frontend">
+            <h1 class="text-5xl font-bold mb-4  frontend">Frontend Developer</h1>
+            <p id="greeting" class="text-2xl mb-6"></p>
             <a href="#contact" class="bg-cyan-400 text-gray-700 px-6 py-3 rounded-full hover:bg-yellow-400">Get in Touch</a>
             <div class="absolute top-0 right-0 mt-6 mr-6 h-40 w-40 bg-gradient-to-br from-white to-transparent opacity-20 rounded-full"></div>
         </div>
         <span class="proper">
-                    <div class="ball1"></div>
-                    <div class="ball2"></div>
-              </span>   
-
+            <div class="ball1"></div>
+            <div class="ball2"></div>
+        </span>
     </section>
 
-    <!-- About Me Section -->
+    
     <section id="about" class="container mx-auto py-20">
         <h2 class="text-4xl font-bold text-yellow-400 mb-8">About Me</h2>
         <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
@@ -64,44 +54,44 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    
     <section id="projects" class="py-20 bg-gray-800">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-yellow-400 mb-8">Projects</h2>
             <div class="space-y-8">
-                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="bg-red-700 p-6 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-semibold mb-4">Responsive Landing Page</h3>
                     <p class="text-lg">
-                        <!-- Project description here -->
+                        
                     </p>
                 </div>
-                <!-- Additional projects can be added here -->
-              <p class="text-lg"> <a href="" class="text-red-400 hover:text-purpple-500">Persona-website</a></p>
-
+                
+                <p class="text-lg"> <a href="" class="text-red-400 hover:text-white">Personal-website</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-yellow-400 mb-8">Contact Me</h2>
-            <p class="text-lg">You can reach me via email at <a href="mailto:ibrahimphilip64@gmail.com" class="text-red-400 hover:text-orange-400">ibrahimphilip64@gmail.com</a>.</p>
-            <p class="text-lg">You can reach me via phone at <a href="" class="text-red-400 hover:text-red-500">+2348112731575</a></p>
-            <!-- <span class="proper">
-                    <div class="ball1">ball1</div>
-                    <div class="ball2">ball2</div>
-              </span>    -->
-
+            <p class="text-lg">You can reach me via email at <a href="mailto:ibrahimphilip64@gmail.com" class="text-red-400 hover:text-blue-300">ibrahimphilip64@gmail.com</a>.</p>
+            <p class="text-lg ">You can reach me via phone at <a href="phonenumber: +2348112731575 hover:" class="text-red-400 hover:text-green-400">+2348112731575</a></p>
+            <div class="flex">
+                <img src="https://www.palmpay.com/_next/static/media/LinkedIn.ffb330cb.png?w=48&q=100" alt="linkdnlogo">
+                <img src="images/gmail logo.svg" alt="gmail">
+                <img src="https://www.palmpay.com/_next/static/media/LinkedIn.ffb330cb.png?w=48&q=100" alt="twitterlogo">
+                <img src="https://img.icons8.com/?size=100&id=6Fsj3rv2DCmG&format=svg" alt="">
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer class="bg-gray-800 py-4 text-center text-sm">
         <p>&copy; 2024 Ibrahim Philip. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript to Toggle Hamburger Menu -->
+
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const menu = document.getElementById('menu');
@@ -109,6 +99,27 @@
         menuBtn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
+
+        
+        function greetUser() {
+            const currentHour = new Date().getHours();
+            let greeting;
+
+            if (currentHour < 12) {
+                greeting = "Good Morning user, I’m here to help. What can I assist you with today?";
+            } else if (currentHour < 18) {
+                greeting = "Good Afternoon, I’m here to help. What can I assist you with today?" ;
+
+            } else {
+                greeting = "Good Evening user, I’m here to help. What can I assist you with today?";
+
+            }
+
+            document.getElementById("greeting").innerText = greeting;
+        }
+
+        
+        greetUser();
     </script>
 </body>
 </html>
