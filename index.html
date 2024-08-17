@@ -88,30 +88,37 @@
           class="rounded-full w-48 h-48"
         />
         <p class="text-lg max-w-2xl leading-relaxed px-4">
-          I hold a degree in Insurance and Risk Management from the University
-          of Lagos, Akoka, Yaba, Lagos, Nigeria. My passion for technology led
-          me to train at Zulfah Academy in Maryland, Lagos, where I honed my
-          skills in front-end web development. I'm currently interning at
-          Prodigy InfoTech, focusing on creating dynamic and responsive web
-          applications.
+              I am a passionate front-end developer with a strong foundation
+              in creating dynamic and responsive web applications. I hold a degree
+              in Insurance and Risk Management from the University of Lagos, where 
+              I developed a keen eye for detail and a dedication to problem-solving. 
+              My journey in web development has equipped me with expertise in HTML, CSS, JavaScript,
+              and modern frameworks. I am committed to delivering visually appealing and user-friendly
+              websites that meet client needs. Currently, I am honing my skills as a software 
+              developer intern at Prodigy InfoTech, where I focus on front-end development to bring 
+              innovative ideas to life.
         </p>
+
       </div>
     </section>
 
     <section id="projects" class="py-20 bg-gray-800">
       <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-yellow-400 mb-8 pl-2">Projects</h2>
+        <h2 class="text-4xl font-bold text-yellow-400 mb-8 pl-2">Projects / Certificates</h2>
         <div class="space-y-8">
-          <div class="bg-red-700 p-6 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-semibold mb-4">Responsive Landing Page</h3>
-            <p class="text-lg"></p>
-          </div>
-
           <p class="text-lg">
             <a href="" class="text-red-400 hover:text-white px-4"
               >Personal-website</a
             >
           </p>
+        </div>
+        <div class="space-y-8">
+             <p class="text-lg"> <br><br>
+             <a
+          href="#contact"
+          class="bg-cyan-400 text-red-400 px-6 py-3 rounded-full hover:bg-white px-6"
+          >Certificates</a
+        >
         </div>
       </div>
     </section>
@@ -136,12 +143,7 @@
           >
         </p>
         <div class="flex">
-          <img
-            src="https://www.palmpay.com/_next/static/media/LinkedIn.ffb330cb.png?w=48&q=100"
-            alt="linkdnlogo"
-          />
-          <!-- <img src="images/gmail logo.svg" alt="gmail" /> -->
-          <img src="./images/X_logo_2023_original.svg.png" alt=" X logo" style="height: 40px" />
+       
         </div>
       </div>
     </section>
@@ -151,12 +153,19 @@
     </footer>
 
     <script>
+      // const menuBtn = document.getElementById("menu-btn");
+      // const menu = document.getElementById("menu");
+
+      // menuBtn.addEventListener("click", () => {
+      //   menu.classList.toggle("hidden");
+
+      // });
+
       const menuBtn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
-
-      menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
+      menuBtn.addEventListener("click", () =>{
+        menu.classList.toggle("hidden")
+      })
 
       function greetUser() {
         const currentHour = new Date().getHours();
@@ -164,19 +173,38 @@
 
         if (currentHour < 12) {
           greeting =
-            "Good Morning user, I’m here to help. What can I assist you with today?";
+            "Good Morning user, What can I assist you with today?";
         } else if (currentHour < 18) {
           greeting =
-            "Good Afternoon, I’m here to help. What can I assist you with today?";
+            "Good Afternoon, What can I assist you with today?";
         } else {
           greeting =
-            "Good Evening user, I’m here to help. What can I assist you with today?";
+            "Good Evening user, What can I assist you with today?";
         }
 
         document.getElementById("greeting").innerText = greeting;
       }
 
       greetUser();
+
+
+      // const menuBtn =[toggleHam, setToggleHam] = useState(false)
+
+    // function ativeToggle() {
+        // setToggleHam(!toggleHam)
+
+
+
+
+      // const menuBtn = document.getElementById("menu-btn");
+      // const menu = document.getElementById("menu");
+
+      // menuBtn.addEventListener("click", () => {
+      //   menu.classList.toggle("hidden");
+
+    // }
+
+      
     </script>
   </body>
 </html>
